@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Japanese Translator Extension – Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+      }
+      button {
+        margin-top: 12px;
+        padding: 8px 14px;
+        font-size: 14px;
+      }
+      .status {
+        margin-top: 12px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Japanese Word-by-Word Translator – Options</h2>
+
+    <label for="apiKey">OpenAI API Key</label>
+    <input type="password" id="apiKey" placeholder="sk-..." />
+    <button id="saveBtn">Save</button>
+
+    <div class="status" id="status"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html> 

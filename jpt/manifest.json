@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Japanese Word-by-Word Translator",
+  "description": "Select Japanese text and press Ctrl+Alt+J to get a word-by-word breakdown using GPT-4o.",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-translate": {
+      "suggested_key": {
+        "default": "Alt+Shift+J"
+      },
+      "description": "Translate selected Japanese text"
+    }
+  },
+  "options_page": "options.html"
+} 
