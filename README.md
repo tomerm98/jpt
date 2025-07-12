@@ -9,7 +9,6 @@ This repository contains an unpacked Chrome extension (named **JPT**) that gives
 * **Shift-Select translation** – Hold <kbd>Shift</kbd>, drag the mouse over any Japanese text, release <kbd>Shift</kbd> ➜ a popup appears with:
   * Word-by-word table + full sentence translation (for phrases / sentences)
   * Conjugation-breakdown table (for a single inflected word)
-* **Universal shortcut** – You can still press <kbd>Alt + Shift + J</kbd> after selecting text if you prefer.
 * **Dark floating popup** – Draggable with **right-click drag** so left-click keeps text selectable.
 * Uses **OpenAI gpt-4o** (or your preferred model) via your own API key.
 
