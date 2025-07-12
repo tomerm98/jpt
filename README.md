@@ -1,6 +1,6 @@
-# Japanese Quick-Translate Chrome Extension
+# JPT – Japanese Quick-Translate Chrome Extension
 
-This repository contains an unpacked Chrome extension that gives you fast, on-page help while reading Japanese.
+This repository contains an unpacked Chrome extension (named **JPT**) that gives you fast, on-page help while reading Japanese.
 
 ---
 
@@ -45,10 +45,7 @@ This repository contains an unpacked Chrome extension that gives you fast, on-pa
 4. **Right-click and drag** the popup to move it; left-click still lets you select / copy table text.
 5. Click anywhere outside the popup to dismiss it.
 
-### B) Keyboard shortcut
-
-1. Select Japanese text normally.
-2. Press <kbd>Alt + Shift + J</kbd> (changeable in Chrome **Keyboard shortcuts**).
+*(You can assign your own keyboard shortcut in Chrome’s **Keyboard shortcuts** page if desired.)*
 
 ---
 

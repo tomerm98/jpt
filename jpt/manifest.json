@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Japanese Word-by-Word Translator",
-  "description": "Select Japanese text and press Ctrl+Alt+J to get a word-by-word breakdown using GPT-4o.",
+  "name": "JPT",
+  "description": "Hold Shift and drag to translate Japanese text. JPT shows a word-by-word table with translation, or a conjugation breakdown for single words—powered by OpenAI GPT-4o.",
   "version": "1.0.0",
   "permissions": [
     "activeTab",
@@ -22,9 +22,6 @@
   ],
   "commands": {
     "toggle-translate": {
-      "suggested_key": {
-        "default": "Alt+Shift+J"
-      },
       "description": "Translate selected Japanese text"
     }
   },
