@@ -6,7 +6,7 @@ This repository contains an unpacked Chrome extension (named **JPT**) that gives
 
 ## Features
 
-* **Shift-Select translation** – Hold <kbd>Shift</kbd>, drag the mouse over any Japanese text, release <kbd>Shift</kbd> ➜ a popup appears with:
+* **Alt-Drag translation** – Hold <kbd>Alt</kbd>, drag the mouse over any Japanese text, release <kbd>Alt</kbd> ➜ a popup appears with:
   * Word-by-word table + full sentence translation (for phrases / sentences)
   * Conjugation-breakdown table (for a single inflected word)
 * **Dark floating popup** – Draggable with **right-click drag** so left-click keeps text selectable.
@@ -38,9 +38,9 @@ This repository contains an unpacked Chrome extension (named **JPT**) that gives
 
 ### A) Shift-drag (recommended)
 
-1. Hold <kbd>Shift</kbd>.
+1. Hold <kbd>Alt</kbd>.
 2. Drag across text you want to translate.
-3. Release <kbd>Shift</kbd> – a spinner pops up just below the selection; a moment later the result appears.
+3. Release <kbd>Alt</kbd> – a spinner pops up just below the selection; a moment later the result appears.
 4. **Right-click and drag** the popup to move it; left-click still lets you select / copy table text.
 5. Click anywhere outside the popup to dismiss it.
 

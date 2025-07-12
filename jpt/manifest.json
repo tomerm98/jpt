@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "JPT",
-  "description": "Hold Shift and drag to translate Japanese text. JPT shows a word-by-word table with translation, or a conjugation breakdown for single words—powered by OpenAI GPT-4o.",
+  "description": "Hold Alt and drag to translate Japanese text. JPT shows a word-by-word table with translation, or a conjugation breakdown for single words—powered by OpenAI GPT-4o.",
   "version": "1.0.0",
   "permissions": [
     "activeTab",

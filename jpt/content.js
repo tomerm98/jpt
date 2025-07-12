@@ -7,13 +7,17 @@
   let lastPopupPos = null; // {top,left}
 
   // --- Shift-hover selection variables ---
-  let selectingShift = false;
+  let selectingShift = false; // keep variable name but semantics alt
   let anchorNode = null;
   let anchorOffset = 0;
 
   // Begin shift-selection
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Shift" && !selectingShift) {
+    if (e.key === "Alt" && !selectingShift) {
+      const tag = (e.target || {}).tagName;
+      const isEditable = (e.target && (e.target.isContentEditable || tag === "INPUT" || tag === "TEXTAREA"));
+      if (isEditable) return; // don't hijack Shift inside editable fields
+
       selectingShift = true;
       anchorNode = null;
       window.getSelection().removeAllRanges();
@@ -44,7 +48,7 @@
 
   // Finish selection on Shift release
   document.addEventListener("keyup", (e) => {
-    if (e.key === "Shift" && selectingShift) {
+    if (e.key === "Alt" && selectingShift) {
       selectingShift = false;
       const text = window.getSelection().toString().trim();
       const selObj = window.getSelection();
